@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6{
   }
 
   .navbar {
-    padding: 3rem 5%;
+    padding: 2rem 5%;
   }
 
   .grid-padding{
@@ -171,16 +171,8 @@ h1, h2, h3, h4, h5, h6{
   }
 
   .position-center {
-    height:90vh;
+    height:93vh;
     display:flex;
     align-content: center;
-  }
-}
-
-
-@media (max-width:550px) {
-  .scroll-down{
-    margin-top:-100px;
-
   }
 }
