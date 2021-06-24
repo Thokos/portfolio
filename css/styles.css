@@ -60,8 +60,9 @@ h1, h2, h3, h4, h5, h6{
 }
 @keyframes bounce-1 {
        0%   { transform: translateY(0); }
-       30%  { transform: translateY(-20px); }
-       60% { transform: translateY(0); }
+       30%  { transform: translateY(-15px); }
+       40% { transform: translateY(0); }
+       60% { transform: translateY(-10px); }
        80% { transform: translateY(0); }
        100% { transform: translateY(0); }
    }
