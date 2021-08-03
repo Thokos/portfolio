@@ -1,4 +1,8 @@
 /* Tag selectorss */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color:#1A1E23;
   color:white;
@@ -6,15 +10,19 @@ body {
 
 p {
   color:white;
-  font-family: 'poppins', sans-serif;
-  font-weight: 300;
+  font-family: 'rubik', sans-serif;
+  font-weight: 400;
   font-size:20px;
 }
 
 h2 {
-  font-size:38px;
+  font-size:34px;
   line-height: 140%;
   font-weight:600;
+}
+
+.color-blue{
+  color:#1A1E23;
 }
 
 h3 {
@@ -40,6 +48,15 @@ h1, h2, h3, h4, h5, h6{
   height:100vh;
 }
 
+.view-height-seventy{
+  height:75vh; 
+}
+
+.background-image{
+  background-position: center;
+
+}
+
 .position-center {
   display:flex !important;
   align-content: center;
@@ -55,6 +72,11 @@ h1, h2, h3, h4, h5, h6{
 .horizontal-padding {
   padding-right:5%;
   padding-left:5%;
+}
+
+.horizontal-padding-2 {
+  padding-right:20%;
+  padding-left:20%;
 }
 
 .vertical-padding {
@@ -80,21 +102,6 @@ h1, h2, h3, h4, h5, h6{
   font-weight:400;
   padding-top:5px;
   padding-bottom:10px;
-}
-
-.scroll-down{
-  margin-top:-80px;
-  padding:0% 5%;
-  text-align: center;
-  font-size:22px;
-  font-family: 'poppins', sans-serif;
-  font-weight:300;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  z-index:-3;
-  position:fixed;
-  color:white;
-  left:40%;
 }
 
 .bounce{
@@ -211,6 +218,10 @@ a.primary-button:hover {
   margin-top:2rem;
 }
 
+.project-container{
+  background-color: white; 
+  color: #1a1e23;
+}
 
 /* ENDPROJECT SECTION */
 
@@ -290,7 +301,7 @@ a.primary-button:hover {
   }
 
   .scroll-down{
-    left:0;
+    left:5%;
   }
   .vertical-padding{
     padding-top:15%;
@@ -315,4 +326,105 @@ a.primary-button:hover {
     font-size:38px;
   }
 
+  .vertical-padding-2 {
+    padding-top:22%;
+    padding-bottom:22%;
+  }
+
+}
+
+.scroll-down{
+  margin-top:-80px;
+  text-align: center;
+  font-size:22px;
+  font-family: 'poppins', sans-serif;
+  font-weight:300;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  z-index:-3;
+  position:fixed;
+  color:white;
+  left:48.5%;
+}
+
+.scrolldown {
+  --color: white;
+  --sizeX: 30px;
+  --sizeY: 50px;
+  position: relative;
+  width: var(--sizeX);
+  height: var(--sizeY);
+  margin-left: var(sizeX / 2);
+  border: calc(var(--sizeX) / 10) solid var(--color);
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.scrolldown::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: var(--color);
+  border-radius: 100%;
+  animation: scrolldown-anim 2s infinite;
+  box-sizing: border-box;
+  box-shadow: 0px -5px 3px 1px #ffffff66;
+}
+
+@keyframes scrolldown-anim {
+  0% {
+    opacity: 0;
+    height: 6px;
+  }
+  40% {
+    opacity: 1;
+    height: 10px;
+  }
+  80% {
+    transform: translate(0, 20px);
+    height: 10px;
+    opacity: 0;
+  }
+  100% {
+    height: 3px;
+    opacity: 0;
+  }
+}
+.chevrons {
+  padding: 6px 0 0 0;
+  margin-left: -3px;
+  margin-top: 48px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chevrondown {
+  margin-top: -6px;
+  position: relative;
+  border: solid var(--color);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+}
+.chevrondown:nth-child(odd) {
+  animation: pulse 500ms ease infinite alternate;
+}
+.chevrondown:nth-child(even) {
+  animation: pulse 500ms ease infinite alternate 250ms;
+}
+@keyframes pulse {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
 }
