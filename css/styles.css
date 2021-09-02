@@ -209,6 +209,7 @@ h1, h2, h3, h4, h5, h6{
   margin-bottom:0px;
   padding-bottom:14px;
   line-height:130%;
+  padding-left:15px;
 }
 
 .project-name-title{
@@ -557,6 +558,11 @@ h1, h2, h3, h4, h5, h6{
     justify-content:center;
     text-align: center;
     padding-bottom:130px;
+  }
+  
+  .created-projects-heading{
+    padding-left:0;
+    padding-bottom:16px;
   }
 
 }
