@@ -15,6 +15,7 @@ p {
   font-size:16px;
 }
 
+
 h1 {
   color:white;
   font-size:64px;
@@ -30,12 +31,34 @@ h2 {
   color:white;
 }
 
+h3 {
+  font-size: 50px;
+  line-height: 150%;
+  font-weight:700;
+}
+
+h4 {
+  padding-bottom:32px;
+  margin-bottom:0px;
+  font-size:32px;
+  font-weight:700;
+}
+
+.ul {
+  font-family: 'inter','sans-serif';
+  font-weight:400;
+}
+
 .color-blue{
   color:#2B2E3C;
 }
 
 .txt-white{
   color:white; 
+}
+
+.txt-black{
+  color:black !important;
 }
 
 .obi-wan {
@@ -52,18 +75,13 @@ h2 {
 }
 
 .bg-light-blue{
-  background-color:#EDF1F2;
+  background-color:#F5F5F5;
 }
 
 .sixteen-rem{
   padding-top:8rem;
 }
 
-h3 {
-  font-size: 50px;
-  line-height: 150%;
-  font-weight:700;
-}
 
 h1, h2, h3, h4, h5, h6{
   font-family: 'inter','sans-serif';
@@ -92,6 +110,21 @@ h1, h2, h3, h4, h5, h6{
   justify-content: center;
 }
 
+.carousel-indicators li {
+  background-color:black !important;
+  width:10px;
+  height:10px;
+  border-radius: 100%;
+}
+
+.carousel-control-next{
+    filter: invert(100%);
+    width:7%;
+}
+
+.carousel-control-prev{
+  width:7%;
+}
 
 .position-center-left {
   display:flex !important;
@@ -103,6 +136,7 @@ h1, h2, h3, h4, h5, h6{
   display:flex !important;
   align-content: flex-end;
   justify-content: left;
+  flex: 1 0 auto;
 }
 
 .home-page-position {
@@ -118,24 +152,74 @@ h1, h2, h3, h4, h5, h6{
   padding-left:5%;
 }
 
+.horizontal-padding-1{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+}
+
 .horizontal-padding-2{
   padding-right:18%;
   padding-left:18%;
 }
 
 .padding-bottom{
-  padding-bottom:15%;
+  padding-bottom:64px;
 }
 
-.vertical-padding {
-  padding-top: 10%;
-  padding-bottom:10%;
+.vertical-padding  {
+  padding-top: 16px;
+  padding-bottom:16px;
 }
+
+.vertical-padding-1  {
+  padding-top: 32px;
+  padding-bottom:32px;
+}
+
 
 .vertical-padding-2 {
-  padding-top: 6%;
-  padding-bottom:6%;
+  padding-top: 64px;
+  padding-bottom:64px;
 }
+
+.vertical-padding-3{
+  padding-top:128px;
+  padding-bottom:128px;
+}
+
+.padding-bottom{
+  padding-bottom:16px;
+}
+
+.padding-bottom-1{
+  padding-bottom:32px;
+}
+
+.padding-bottom-2{
+  padding-bottom:64px;
+}
+
+.padding-bottom-3{
+  padding-bottom:128px;
+}
+
+.padding-top{
+  padding-top:16px;
+}
+
+.padding-top-1{
+  padding-top:32px;
+}
+
+.padding-top-2{
+  padding-top:64px;
+}
+
+.padding-top-3{
+  padding-top:128px;
+}
+
 
 .ui-padding {
   padding-top:15%;
@@ -198,9 +282,8 @@ h1, h2, h3, h4, h5, h6{
     background-position:80% 20%;
 }
 
-
 .projects-containter {
-  padding:156px 12%;
+  padding:128px 5%;
 }
 
 .created-projects-heading{
@@ -254,7 +337,29 @@ h1, h2, h3, h4, h5, h6{
   text-decoration:none;
 }
 
+.project-p{
+  font-size:18px;
+  font-weight:400;
+  
+}
+
 /* END HOMEPAGE SECTION */
+
+/* BEGIN FIRST WORK SECTION */
+
+.table-of-content-header {
+  font-size:80px;
+  font-weight:700;
+}
+
+.table-of-content-list {
+  font-size:40px;
+  color:white;
+  font-weight:600;
+}
+
+
+/* END FIRST WORK SECTION */
 
 
 
@@ -309,6 +414,19 @@ h1, h2, h3, h4, h5, h6{
   width:100%;
 }
 
+.ui-block-2{
+  padding:30px;
+}
+
+.ui-block-2 img{
+  width:100%;
+}
+
+
+.full-w{
+  width:100%;
+}
+
 .ui-subheader{
   color:white;
   font-weight:400;
@@ -346,7 +464,7 @@ h1, h2, h3, h4, h5, h6{
 
 .experience-subheader{
   color:white;
-  font-size:20px;
+  font-size:22px;
   font-weight:600;
 }
 
@@ -414,7 +532,7 @@ h1, h2, h3, h4, h5, h6{
 @media (max-width: 990px) {
 
   .projects-containter {
-    padding:100px 32px;
+    padding:32px 49px;
   }
   
   .created-projects-heading{
@@ -489,12 +607,28 @@ h1, h2, h3, h4, h5, h6{
     padding-top:15%;
     padding-bottom:15%;
   }
+
+  .horizontal-padding-1{
+    padding-right:64px;
+    padding-left:64px;
+    margin-left:0;
+    margin-right:0;
+    max-width:100%;
+  }
   
   .horizontal-padding-2{
     padding-right:7%;
     padding-left:7%;
   }
+
+
+  .table-of-content-header {
+    font-size:60px;
+  }
   
+  .table-of-content-list {
+    font-size:32px;
+  }
 
   .padding-l{
     padding-left:0%;
@@ -524,6 +658,15 @@ h1, h2, h3, h4, h5, h6{
     background-position:right;
   }
 
+  .padding-bottom {
+    padding-bottom: 32px;
+  }
+
+  .vertical-padding-2{
+    padding-top:64px;
+    padding-bottom:64px;
+  }
+
 }
 
 @media (max-width:768px){
@@ -533,11 +676,11 @@ h1, h2, h3, h4, h5, h6{
   }
 
   .project-cl-1, .project-cl-3 {
-    padding: 32px 0px;
+    padding: 32px 16px;
   }
   
   .project-cl-2, .project-cl-4 {
-    padding: 32px 0px;
+    padding: 32px 16px;
   }
 
   .arrow-right {
@@ -547,6 +690,12 @@ h1, h2, h3, h4, h5, h6{
   .project-name-title{
     font-size:36px;
   }
+
+  .projects-containter {
+    padding-left:1px;
+    padding-right:1px;
+  }
+
   
   .index-hero-image {
     background-position:center top;
@@ -561,8 +710,59 @@ h1, h2, h3, h4, h5, h6{
   }
   
   .created-projects-heading{
-    padding-left:0;
+    padding-left:16px;
+  }
+
+
+  .horizontal-padding-2, .horizontal-padding-1{
+    padding-right:1rem;
+    padding-left:1rem;
+  }
+
+  .vertical-padding-3{
+    padding-top:64px;
+    padding-bottom:64px;
+  }
+
+
+  .table-of-content-header {
+    font-size:48px;
+  }
+  
+  .table-of-content-list {
+    font-size:28px;
+  }
+
+  .padding-bottom{
+    padding-bottom:8px;
+  }
+  
+  .padding-bottom-1{
     padding-bottom:16px;
+  }
+  
+  .padding-bottom-2{
+    padding-bottom:32px;
+  }
+  
+  .padding-bottom-3{
+    padding-bottom:64px;
+  }
+  
+  .padding-top{
+    padding-top:8px;
+  }
+  
+  .padding-top-1{
+    padding-top:16px;
+  }
+  
+  .padding-top-2{
+    padding-top:32px;
+  }
+  
+  .padding-top-3{
+    padding-top:64px;
   }
 
 }
@@ -579,8 +779,8 @@ h1, h2, h3, h4, h5, h6{
   }
 
   .projects-containter {
-    padding-left:16px;
-    padding-right:16px;
+    padding-left:1px;
+    padding-right:1px;
   }
 
   .project-name-title{
@@ -618,17 +818,13 @@ h1, h2, h3, h4, h5, h6{
     padding-bottom:10%;
   }
   
-  .horizontal-padding-2{
-    padding-right:1rem;
-    padding-left:1rem;
-  }
+
 
   .padding-bottom{
-    padding-bottom:16%;
+    padding-bottom:16px;
   }
 
   .experience-subheader{
-  font-size:16px;
   margin-top:18px;
   margin-bottom:8px;
   }
@@ -641,4 +837,10 @@ h1, h2, h3, h4, h5, h6{
     padding-left:0px;
     padding-right: 0px;
   }
+  
+  .ui-block-2{
+    padding-right:0px;
+    padding-top:0px;
+  }
+
 }
